@@ -9,6 +9,14 @@ export JAVA_HOME=~/.local/share/mise/installs/java/zulu-11.66.15
 export ANDROID_HOME=~/Library/Android/sdk
 export ANDROID_ROOT_SDK=$ANDROID_HOME
 
+# pnpm
+export PNPM_HOME="~/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end%
+
 # -U ensures each entry in these is unique (that is, discards duplicates).
 export -U PATH path FPATH fpath MANPATH manpath
 export -UT INFOPATH infopath  # -T creates a "tied" pair; see below.
