@@ -39,3 +39,5 @@ done
 # `znap eval <name> '<command>'` is like `eval "$( <command> )"` but with
 # caching and compilation of <command>'s output, making it ~10 times faster.
 znap eval zcolors zcolors   # Extra init code needed for zcolors.
+
+znap install Homebrew/brew
