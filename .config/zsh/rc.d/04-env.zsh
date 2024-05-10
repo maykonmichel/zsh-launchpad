@@ -6,6 +6,9 @@
 
 export JAVA_HOME=~/.local/share/mise/installs/java/zulu-11.66.15
 
+export ANDROID_HOME=~/Library/Android/sdk
+export ANDROID_ROOT_SDK=$ANDROID_HOME
+
 # -U ensures each entry in these is unique (that is, discards duplicates).
 export -U PATH path FPATH fpath MANPATH manpath
 export -UT INFOPATH infopath  # -T creates a "tied" pair; see below.
@@ -18,6 +21,9 @@ path=(
     /home/linuxbrew/.linuxbrew/bin(N)   # (N): null if file doesn't exist
     $path
     ~/.local/bin
+    $ANDROID_HOME
+    $ANDROID_HOME/platform-tools
+    $ANDROID_HOME/tools
 )
 
 # Add your functions to your $fpath, so you can autoload them.
