@@ -9,6 +9,13 @@ export JAVA_HOME=~/.local/share/mise/installs/java/zulu-11.66.15
 export ANDROID_HOME=~/Library/Android/sdk
 export ANDROID_ROOT_SDK=$ANDROID_HOME
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '~/Git/google-cloud-sdk/path.zsh.inc' ]; then . '~/Git/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '~/Git/google-cloud-sdk/completion.zsh.inc' ]; then . '~/Git/google-cloud-sdk/completion.zsh.inc'; fi
+
+
 # pnpm
 export PNPM_HOME="~/.local/share/pnpm"
 case ":$PATH:" in
