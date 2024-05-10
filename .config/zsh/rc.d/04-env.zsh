@@ -4,6 +4,8 @@
 # Environment variables
 #
 
+export JAVA_HOME=~/.local/share/mise/installs/java/zulu-11.66.15
+
 # -U ensures each entry in these is unique (that is, discards duplicates).
 export -U PATH path FPATH fpath MANPATH manpath
 export -UT INFOPATH infopath  # -T creates a "tied" pair; see below.
